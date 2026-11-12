@@ -14,45 +14,34 @@ With Tokenrip connected, you can ask your assistant to:
 
 You sign in with your email and a six-digit code. Each app you connect gets its own access, which you can revoke from the Tokenrip dashboard at any time.
 
-## What this plugin does
+## Install
 
-This plugin connects the Antigravity App and CLI to Tokenrip's MCP server at `https://api.tokenrip.com/mcp`. Once connected, the assistant can read and save work in your Tokenrip workspaces, report what it did, and ask in Tokenrip before steps that need you. A request it leaves there waits until you decide.
+```bash
+agy plugin install https://github.com/tokenrip/antigravity-plugin
+```
 
-The plugin holds the server's address and one skill, `tokenrip`, which tells the assistant when to reach for your Tokenrip workspaces and how to work in them: load a workspace before changing it, give each change a one-sentence reason, and ask you in Tokenrip before a step outside it. No key, no script.
+The plugin shows up in both the Antigravity CLI and the App. To sign in, open `/plugin` in the CLI, or **Customizations → Installed → Tokenrip → Accounts** in the App, and choose **Sign in**.
 
-## Install from a local copy
-
-- **Antigravity App.** Copy the plugin folder to `~/.gemini/config/plugins/tokenrip` and restart the App. Open **Customizations → Installed → Tokenrip → Accounts → Sign in**.
-- **Antigravity CLI.** Run `agy plugin install /path/to/tokenrip` with the path to the plugin folder. Run `agy plugin list` to see the installed plugin. In the interactive CLI, open `/plugin`, expand Tokenrip under **Installed**, and choose **Sign in**.
-
-Complete Tokenrip sign-in in your browser and approve the connection. Copy the code from the Antigravity callback immediately after that approval into the waiting Tokenrip authorization prompt in the App or CLI.
-
-## Try a prompt
+## Try it
 
 - What workspaces do I have in Tokenrip?
 - What's left on the task list in our renovation workspace?
 - Pick up where my other agent left off on the launch plan.
 
-## Your data
+## What's included
 
-- **What Tokenrip keeps:** your account, and what you and your agents put in: files, tables, tasks, folders and workspaces, with the history of what changed in each.
-- **The reason for a change:** with a change, an agent may send a short reason, which is kept with the change in the workspace history. That history is kept for as long as it's needed, then deleted, and it goes with its workspace.
-- **Agent requests:** what each request sent and got back is kept for 30 days, so problems can be found and fixed. Secrets are removed first, and the contents of files, tables and connection calls are never kept, only their size. The rest of the record (which agent, which operation, when, the result and the reason) is kept for one year, or until the account is deleted.
-- **Conversation IDs:** when an agent sends a conversation ID, only a one-way hash of it is kept.
-- **No sale, no ads, no training:** Tokenrip doesn't sell data, doesn't show ads, and doesn't use your content to train AI models.
-- **Deleting:** deleted files, folders, workspaces and bundles stay in the trash for 30 days and can be restored; other deletions are permanent. To delete your account, go to Settings in the Tokenrip dashboard.
+- **The Tokenrip MCP server** at `https://api.tokenrip.com/mcp`. You sign in with your email and a six-digit code, and a free account is created if you don't have one.
+- **The `tokenrip` skill**, which tells the agent when to use your workspaces, to say why it changed something, and to ask you before a step outside the workspace.
 
-The privacy policy is the full statement: https://tokenrip.com/privacy
+## Privacy
 
-## Disconnecting
+The plugin connects your assistant to Tokenrip's server at `https://api.tokenrip.com/mcp`. Your assistant sends Tokenrip what you ask it to read or save, a short reason with each change and, when the app provides one, a conversation ID, which is kept only as a one-way hash. Tokenrip keeps your workspaces, deletes what each request sent and got back after 30 days and the rest of its record after a year, never sells your data, and doesn't use your content to train AI models. Uninstalling doesn't revoke access: revoke it on the Agents page of your Tokenrip dashboard.
 
-Uninstalling the plugin does not revoke Tokenrip's access. To revoke it, sign in to your Tokenrip dashboard and revoke the Antigravity connection on the Agents page. The App and CLI in one profile share that connection.
+[Privacy policy](https://tokenrip.com/privacy) · [Terms](https://tokenrip.com/terms)
 
 ## Links
 
-- [Tokenrip setup guide](https://tokenrip.com/setup)
-- [Connecting over MCP](https://docs.tokenrip.com/getting-started/mcp-server)
-- [MCP tool reference](https://tokenrip.com/mcp)
+[Setup guide](https://tokenrip.com/setup) · [Docs](https://docs.tokenrip.com/getting-started/antigravity) · [Tool reference](https://tokenrip.com/mcp) · [Support](https://tokenrip.com/support) (support@tokenrip.com)
 
 ## License
 

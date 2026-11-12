@@ -2,8 +2,8 @@
   "$schema": "https://antigravity.google/schemas/v1/plugin.json",
   "name": "tokenrip",
   "displayName": "Tokenrip",
-  "version": "0.1.0",
-  "description": "Shared workspaces for your documents, tables and tasks, so work carries from one chat to the next.",
+  "version": "0.1.1",
+  "description": "Connect your assistant to Tokenrip workspaces to save documents and tables, track tasks, share with your team, and hand off work between chats and assistants.",
   "logo": "assets/icon.png",
   "suggestedPrompts": [
     "What workspaces do I have in Tokenrip?",
@@ -16,5 +16,6 @@
   },
   "homepage": "https://tokenrip.com",
   "repository": "https://github.com/tokenrip/antigravity-plugin",
-  "license": "MIT"
+  "license": "MIT",
+  "keywords": ["productivity", "collaboration", "developer-tools"]
 }
