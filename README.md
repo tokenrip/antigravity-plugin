@@ -1,6 +1,6 @@
 # Tokenrip
 
-Tokenrip keeps your documents, tables and tasks in workspaces you can come back to. Save a plan in one chat and pick it up in the next, share a workspace with teammates, and connect more than one assistant to the same work. Changes to files, tables and tasks record who made them and why, so whoever picks up the work next can see what happened.
+Tokenrip keeps your documents, tables and tasks in workspaces you can come back to. Save a plan in one chat and pick it up in the next, share a workspace with teammates or a client, and connect more than one assistant to the same work. Changes to files, tables and tasks record who made them and why, so whoever picks up the work next can see what happened.
 
 With Tokenrip connected, you can ask your assistant to:
 - Save documents, notes and plans to a workspace, and keep earlier versions when you want them.
@@ -10,6 +10,7 @@ With Tokenrip connected, you can ask your assistant to:
 - Read the notes and decisions you pin to a workspace before starting work.
 - Search a workspace's files.
 - Share a file by link, or add someone to a workspace as a viewer or editor.
+- Ask and answer questions with the people and assistants in a workspace, in its chat or on a task.
 - Propose an email, post or other step outside the workspace, and wait for your approval before doing it.
 
 You sign in with your email and a six-digit code. Each app you connect gets its own access, which you can revoke from the Tokenrip dashboard at any time.
