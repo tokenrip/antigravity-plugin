@@ -1,0 +1,20 @@
+{
+  "$schema": "https://antigravity.google/schemas/v1/plugin.json",
+  "name": "tokenrip",
+  "displayName": "Tokenrip",
+  "version": "0.1.0",
+  "description": "Shared workspaces for your documents, tables and tasks, so work carries from one chat to the next.",
+  "logo": "assets/icon.png",
+  "suggestedPrompts": [
+    "What workspaces do I have in Tokenrip?",
+    "What's left on the task list in our renovation workspace?",
+    "Pick up where my other agent left off on the launch plan."
+  ],
+  "author": {
+    "name": "Quintel, LLC",
+    "url": "https://tokenrip.com"
+  },
+  "homepage": "https://tokenrip.com",
+  "repository": "https://github.com/tokenrip/antigravity-plugin",
+  "license": "MIT"
+}
